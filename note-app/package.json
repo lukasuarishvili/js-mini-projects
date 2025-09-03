@@ -1,0 +1,12 @@
+{
+  "name": "note-app",
+  "version": "1.0.0",
+  "description": "Simple note-taking app",
+  "license": "ISC",
+  "author": "L.S",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
