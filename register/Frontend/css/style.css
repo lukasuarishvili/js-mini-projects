@@ -1,0 +1,17 @@
+/* ROBOTO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background-image: url(../assets/images/ashish-kumar-senapati-bdGBRaWT0Gk-unsplash.jpg);
+}
+
+.bg-welcome {
+    background-image: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+
+
+/* CLASS FOR ROBORO FONT */
+.roboto-main {
+  font-family: "Roboto", sans-serif;  
+}

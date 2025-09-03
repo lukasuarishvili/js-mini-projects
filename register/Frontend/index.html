@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body
+    class="min-h-screen flex flex-col-reverse justify-center items-center text-center gap-10 lg:flex-row lg:text-left lg:gap-20 bg-center bg-cover bg-no-repeat px-1.5 py-10 roboto-main ">
+
+
+    <section class=" w-full max-w-md bg-transparent">
+        <h1 class="font-extrabold text-4xl lg:text-6xl text-white mb-4">Welcome!</h1>
+
+        <p class="text-white text-xl leading-relaxed">
+            this it my simple Register page for future projects I am working on just sign Up and give me you're data to
+            me
+            where
+            it will be stored in <span class="text-amber-500 font-semibold">SQL</span> database locally im my
+            machine
+        </p>
+
+        <h3 class="text-2xl lg:text-3xl text-white font-bold mt-6">Follow Me Here:</h3>
+        <ul class="flex gap-4 mt-3 justify-center lg:justify-start">
+            <a href="#"><img src="./assets/images/icons8-facebook-48.png" alt="facebook"
+                    class="w-8 h-8 hover:scale-110 transition"></a>
+            <a href="#"><img src="./assets/images/icons8-instagram-48.png" alt="instagram"
+                    class="w-8 h-8 hover:scale-110 transition"></a>
+            <a href="#"><img src="./assets/images/icons8-twitter-bird-48.png" alt="twitter"
+                    class="w-8 h-8 hover:scale-110 transition"></a>
+            <a href="#"><img src="./assets/images/icons8-youtube-48.png" alt="youtube"
+                    class="w-8 h-8 hover:scale-110 transition"></a>
+            <a href="#"><img src="./assets/images/icons8-google-48.png" alt="google"
+                    class="w-8 h-8 hover:scale-110 transition"></a>
+        </ul>
+    </section>
+
+
+    <section class="w-full max-w-md rounded-2xl p-6 ">
+        <div class="text-center mb-6">
+            <h1 class="font-extrabold text-3xl lg:text-4xl text-white">Signup Form</h1>
+        </div>
+
+        <form class="space-y-4 text-white text-[16px] font-medium">
+
+            <!-- NAME ADN  SURNAME -->
+            <div class="flex flex-col lg:flex-row gap-4">
+                <div class="flex-1">
+                    <label class="block mb-1">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name" class="w-full px-3 py-2 rounded-md bg-white/20 text-white placeholder-gray-300 focus:ring-2 focus:ring-gray-200
+                         outline-none">
+                </div>
+                <div class="flex-1">
+                    <label class="block mb-1">Surname</label>
+                    <input id="surname" type="text" placeholder="Enter your surname"
+                        class="w-full px-3 py-2 rounded-md bg-white/20 text-white placeholder-gray-300 focus:ring-2 focus:ring-gray-200 outline-none">
+                </div>
+            </div>
+
+            <!--  EMAIL-->
+            <div>
+                <label class="block mb-1">Email Address</label>
+                <input id="email" type="email" placeholder="example@gmail.com"
+                    class="w-full px-3 py-2 rounded-md bg-white/20 text-white placeholder-gray-300 focus:ring-2 focus:ring-gray-200 outline-none">
+            </div>
+
+            <!--  PASSWORD -->
+            <div>
+                <label class="block mb-1">Password</label>
+                <input id="password" type="password" placeholder="Your password here"
+                    class="w-full px-3 py-2 rounded-md bg-white/20 text-white placeholder-gray-300 focus:ring-2 focus:ring-gray-200 outline-none">
+            </div>
+
+
+            <button id="submit"
+                class="w-full py-2 mt-2 rounded-md bg-white text-black font-bold hover:bg-gray-200 transition">
+                <p>Sign Up Now</p>
+            </button>
+
+            <!-- IN PROGRESS NOT FINISHED -->
+            <p class="flex flex-row items-center w-full justify-center gap-4 text-sm mt-4">
+                Already have an account?
+                <a href="" class="underline hover:text-blue-600">Log in</a>
+            </p>
+        </form>
+    </section>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
