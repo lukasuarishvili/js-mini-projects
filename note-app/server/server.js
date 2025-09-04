@@ -28,8 +28,8 @@ let users=[
     }
 ]
 
-app.get("/Main", (req, res)=> {
-    res.render("index.ejs",{
+app.get("/Dashboard", (req, res)=> {
+    res.render("Dashboard.ejs",{
         users
     })
 })
