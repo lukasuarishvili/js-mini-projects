@@ -1,4 +1,4 @@
-import mysql from "mysql2";
+
 import dotenv from "dotenv";
 import { pool } from './conection.js'
 dotenv.config();
@@ -11,4 +11,11 @@ export async function getTodos() {
     return (rows)
 }
 
-getTodos()
+
+export async function addTodo(info) {
+    
+}
+
+export async function getTodosById(id) {
+    
+}

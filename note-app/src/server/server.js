@@ -13,25 +13,27 @@ dotenv.config();
 
 const port = process.env.SERVER_PORT;
 
+
 app.get('/', (req, res) => {
     res.send("running servvers good 👍")
 });
 
 
-
-app.get("/Dashboard", async(req, res) => {
-    
-    res.render("Dashboard.ejs" )
+app.get("/index", async(req, res) => {
+    res.render("index.ejs" )
 });
 
-app.get("/Main", (req, res) => {
-    res.render("Testing.ejs")
+app.get("/addtodos", (req, res) => {
+    res.render("addtodos.ejs")
 });
 
 app.get("/todos" , async (req,res) => {
     const todos =await getTodos();
     res.render("todos.ejs", {todos})
 })
+
+
+
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
