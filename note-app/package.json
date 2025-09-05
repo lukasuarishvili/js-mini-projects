@@ -4,16 +4,17 @@
   "description": "Simple note-taking app",
   "license": "ISC",
   "author": "L.S",
-  "type": "commonjs",
+  "type": "module",
   "main": "server/server.js",
   "scripts": {
-    "dev:server": "nodemon servers/server.js",
-    "dev:css": "tailwindcss -i ./public/src/input.css -o ./public/src/output.css --watch",
+    "dev:server": "nodemon ./src/server/server.js",
+    "dev:css": "tailwindcss -i ./public/tailwind/input.css -o ./public/tailwind/output.css --watch",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:css\""
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.12",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "mysql2": "^3.14.4",
@@ -24,4 +25,3 @@
     "nodemon": "^3.1.10"
   }
 }
-
