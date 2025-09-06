@@ -1,7 +1,0 @@
-Users must be able to:
-
-1. Create, edit, and delete notes
-
-2. Mark notes as completed or in progress
-
-3. Search notes by title
