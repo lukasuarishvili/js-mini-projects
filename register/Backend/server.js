@@ -46,7 +46,7 @@ app.post('/addUser', async (req, res) => {
     try {
         //ADDING USER
         await addUser(req.body);
-        res.status(201).json({ message: "User added successfully" }); 
+        res.status(201).json({ message: "User added successfully" });
     } catch (error) {
         console.error("Error adding user:", error);
         res.status(500).json({ error: "Internal Server Error" });
@@ -55,6 +55,6 @@ app.post('/addUser', async (req, res) => {
 
 //WHAT PORT THE SERVER IS LISTINING ON
 app.listen(PORT, () => {
-    console.log(`Example app listening on ${port}`);
+    console.log(`Example app listening on ${PORT}`);
 });
 
