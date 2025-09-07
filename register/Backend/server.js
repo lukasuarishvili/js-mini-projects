@@ -54,7 +54,7 @@ app.post('/addUser', async (req, res) => {
 });
 
 //WHAT PORT THE SERVER IS LISTINING ON
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log(`Example app listening on ${port}`);
 });
 
