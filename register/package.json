@@ -8,6 +8,7 @@
   "main": "Backend/server.js",
   "scripts": {
     "start": "node Backend/server.js",
+    "build:css": "tailwindcss -i ./src/input.css -o ./Backend/public/output.css --minify",
     "dev:server": "nodemon Backend/server.js",
     "dev:css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:css\""
