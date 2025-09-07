@@ -10,7 +10,10 @@ app.use(cors());
 app.use(express.json());
 dotenv.config();
 
-const port = process.env.SERVER_PORT;
+
+const PORT = process.env.PORT || 3000;
+
+
 
 app.get('/', (req, res) => {
     res.send('it working');

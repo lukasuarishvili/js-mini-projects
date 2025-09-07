@@ -7,6 +7,7 @@
   "type": "module",
   "main": "Backend/server.js",
   "scripts": {
+    "start": "node Backend/server.js",
     "dev:server": "nodemon Backend/server.js",
     "dev:css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:css\""
