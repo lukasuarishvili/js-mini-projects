@@ -25,3 +25,6 @@ VALUES (
         "TESTING3",
         "THIS IS 3 titleTESTING OF THE DATABSE "
     );
+    
+
+DROP DATABASE note_app

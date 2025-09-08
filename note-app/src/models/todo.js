@@ -6,17 +6,35 @@ dotenv.config();
 
 export async function getTodos() {
     const [rows] = await pool.query("SELECT * FROM  todos")
-    console.log(rows)
+
     return (rows)
 }
 
 
 export async function addTodo(info) {
-    //this addes the to do tj the database
-    pool.query('INSERT INTO todos(TITLE, NOTE) ?  ')
+    //this addes the todos to the database
+    try {
+        const { title, todo } = info
+        pool.execute('INSERT INTO todos(TITLE, NOTE) Values (?,?) ',
+            [title, todo]
+        )
+        return true
+    } catch (error) {
+        return false
+    }
 
 }
 
-export async function getTodosById(id) {
 
+export async function getTodosById(id) {
+    try {
+        const [rows] = await pool.execute(
+            'SELECT * FROM todos WHERE id = ?',
+            [id]
+        );
+        return rows;
+    } catch (error) {
+        console.error(error);
+        return false;
+    }
 }

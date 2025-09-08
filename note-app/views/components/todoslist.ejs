@@ -1,0 +1,19 @@
+<div class="flex justify-center items-center flex-col w-full p-6 bg-gray-50 min-h-screen">
+  <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-5xl">
+    <% todos.forEach(todo => { %>
+      <li class="bg-white p-5 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-200 flex flex-col gap-3 border border-gray-100">
+        <div class="font-semibold text-base text-gray-800">
+          <%= todo.title %>
+        </div>
+        <div class="text-sm text-gray-500">
+          <%= todo.note %>
+        </div>
+
+        <div class="mt-auto flex flex-col gap-2.5 items-center justify-between text-xs text-gray-500">
+          <small class="italic"><%= todo.created_at %></small>
+          
+        </div>
+      </li>
+    <% }) %> 
+  </ul>
+</div>
