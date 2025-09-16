@@ -1,0 +1,12 @@
+CiteWatch (demo)
+
+-user wil search the city/place thet want and they get all avable info about it:
+
+INFO:
+    weather,
+    history,
+    crime rate,
+    demographic,
+    languige
+
+Most important the map of the city

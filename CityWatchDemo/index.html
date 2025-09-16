@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CityWatch (demo)</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body class="h-screen bg-gray-100 flex flex-col items-center justify-start pt-10 px-4">
+
+  <header class="w-full flex justify-center mb-8">
+    <form class="flex w-full max-w-md bg-white rounded-lg shadow-md overflow-hidden">
+      <input type="text" class="flex-1 px-4 py-2 text-gray-700 focus:outline-none" placeholder="Search the city">
+      <button type="submit" class="bg-amber-400 hover:bg-amber-500 text-white  px-4 py-2 font-semibold flex gap-3">
+        Search
+        <img src="./public/icons8-search.svg" alt="Search icon" class="text-white">
+      </button>
+    </form>
+  </header>
+  <main class="w-full h-full rounded-lg" id="map">
+
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
