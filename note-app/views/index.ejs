@@ -14,10 +14,10 @@
     <h1 class="text-2xl text-center font-bold mb-6 text-gray-800">TODO LIST</h1>
 
 
-    <!-- <form  action="/getTodoById" </form>method="post" class="flex gap-2">
-    <input name="id" type="number" placeholder="Enter ID" class="border px-2 py-1 rounded">
-    <button type="submit" class="bg-gray-800 text-white px-3 py-1 rounded">Search by ID</button>
-    </form> -->
+    <form action="/getTodoById/" method="get" </form>
+      <input name="id" type="number" placeholder="Enter ID" class="border px-2 py-1 rounded">
+      <button type="submit" class="bg-gray-800 text-white px-3 py-1 rounded">Search by ID</button>
+    </form>
 
     <%- include('./components/todoslist'); %>
 

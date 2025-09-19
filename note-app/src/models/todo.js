@@ -16,7 +16,7 @@ export async function addTodo(info) {
     try {
         const { title, todo } = info
         pool.execute('INSERT INTO todos(TITLE, NOTE) Values (?,?) ',
-            [title, todo]
+            [title, todo ]
         )
         return true
     } catch (error) {
@@ -32,7 +32,7 @@ export async function getTodosById(id) {
             'SELECT * FROM todos WHERE id = ?',
             [id]
         );
-        return rows;
+        return rows[0];
     } catch (error) {
         console.error(error);
         return false;

@@ -33,15 +33,23 @@ app.get("/addtodos", async (req, res) => {
 
 
 
-// app.post("/getTodoById", async (req, res) => {
-//     // const data= req.body;
-//     // const todoinfo= getTodosById(req.body)
+app.get("/getTodoById", async (req, res) => {
+    const toDoId = req.query.id
+    const toDo = await getTodosById(toDoId);
+    try {
+        const toDo = await getTodosById(toDoId);
+        if (!toDo == []) {
+            res.render("singleTodo.ejs", { toDo });
+        } else {
+            throw error
+        }
+    } catch (error) {
+        const todos = await getTodos();
+        res.render("index.ejs", { todos })
+    }
 
-//     const id = req.body.id;
-//     const todo = await getTodosById(id)
-//     res.render("singleTodo.ejs", { todo: todo[0] });
 
-// });
+});
 
 //post request
 
